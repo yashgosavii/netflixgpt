@@ -1,6 +1,12 @@
+import Header from "./Header"
+import Footer from "./Footer"
 const Body = () => {
   return (
-    <div>Body</div>
+    <div>
+        <Header/>
+        <div>HOMEPAGE</div>
+        <Footer/>
+    </div>
   )
 }
 

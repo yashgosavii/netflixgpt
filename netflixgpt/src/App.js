@@ -1,15 +1,10 @@
-import Header from "./components/Header";
 import {createBrowserRouter, Outlet} from "react-router-dom";
-import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Browse from "./components/Browse";
+import Body from "./components/Body";
 function App() {
   return (
-    <>
-      <Header/>
       <Outlet/>
-      <Footer/>
-    </>
   );
 }
 
@@ -20,7 +15,7 @@ export const appRouter = createBrowserRouter([
     children : [
       {
         path : "/",
-        element : <Login/>
+        element : <Body/>
       },
       {
         path : "/login",
